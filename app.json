@@ -1,0 +1,24 @@
+{
+  "name": "smartscraper",
+  "description": "app",
+  "scripts": {
+    "postdeploy": "bin/setup",
+    "pr-predestroy": "bin/setup"
+  },
+  "env": {
+    "STARBOT_COMMAND_TOKEN": {
+      "required": true
+    },
+    "WEBHOOK_URL": "/webhook"
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://ibraheemsadiqvirtualapp.herokuapp.com/"
+    }
+  ]
+}
